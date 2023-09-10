@@ -1,0 +1,143 @@
+@font-face {
+   font-family: VT323;
+   src: url(../fonts/VT323/VT323-Regular.ttf);
+ }
+ @font-face {
+   font-family: unifont;
+   src: url(../fonts/Unifont/unifont-min-13.0.04.ttf);
+ }
+ * {
+   margin: 0px;
+   padding: 0px;
+   font-weight: bold;
+   color: white;
+   text-decoration: none;
+   -ms-interpolation-mode: nearest-neighbor;
+       image-rendering: -moz-crisp-edges;
+       image-rendering: pixelated;
+ }
+ 
+ body {
+   height: 100vh;
+   width: 100vw;
+   background: #140d14;
+ }
+ 
+ .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   width: 100vw;
+ }
+ .container .pill {
+   padding-top: 8px;
+   padding-left: 8px;
+   position: fixed;
+   left: 0%;
+   top: 0%;
+ }
+ .container .box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: unifont;
+ }
+ .container .box .logo img {
+  border-radius: 16px;
+  width: 128px;
+ }
+ .container .box .run {
+   font-size: 26px;
+   margin-bottom: 10px;
+   color: rgb(243, 243, 243);
+   text-shadow: 2px 0px rgba(225, 0, 255, 0.596), -2px 0px rgb(20, 121, 204);
+   font-weight: bold;
+   font-family: unifont;
+ }
+ .container .box .extra {
+   text-align: center;
+   font-size: 18px;
+ }
+
+ .container .madewithlove {
+   text-align: center;
+   font-size: 12px;
+   justify-content: flex-end;
+   font-family: unifont;
+ }
+
+ .container footer {
+  position: relative;
+  top: 36%;
+ }
+
+ .container .box .extra .ic:hover {
+  cursor: pointer;
+ }
+
+ .container .box .extra .madewithlove a {
+   color: #da217d;
+ }
+ .container .box .extra .ic i {
+   background: -webkit-linear-gradient(-40deg, #ee529b, #c90a43, #0c50e2, #6d04aa);
+   background-size: 400% 400%;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+           background-clip: text;
+   -webkit-animation: gradient 15s ease-in infinite;
+           animation: gradient 15s ease-in infinite;
+   font-size: 26px;
+ }
+ .container .box .split {
+   text-align: center;
+   font-size: 18px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+ }
+ .container .box .split p {
+   font-size: 20px;
+ }
+ .container .box .buttons {
+   width: 60%;
+   text-align: center;
+   border: 2px solid transparent;
+ }
+ .container .box .buttons a img {
+   width: 88px;
+   height: 31px;
+ }
+
+ 
+ @-webkit-keyframes gradient {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+ @keyframes gradient {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+ @media screen and (max-width: 470px) {
+   .container .box .buttons {
+     width: 80%;
+   }
+   .container .pill {
+     display: none;
+   }
+ }
